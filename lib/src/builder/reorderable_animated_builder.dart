@@ -906,6 +906,7 @@ class ReorderableAnimatedBuilderState extends State<ReorderableAnimatedBuilder>
         case TargetPlatform.android:
         case TargetPlatform.fuchsia:
         case TargetPlatform.iOS:
+        default:
           return ReorderableGridDelayedDragStartListener(
               dragStartDelay: widget.dragStartDelay,
               key: itemGlobalKey,
